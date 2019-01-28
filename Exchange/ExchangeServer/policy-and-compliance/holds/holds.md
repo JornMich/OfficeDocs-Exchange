@@ -82,7 +82,7 @@ The In-Place Hold functionality is integrated with In-Place eDiscovery searches.
 - [Create or remove an In-Place Hold](in-place-holds.md)
     
 > [!NOTE]
-> If you use Exchange Online Archiving to provision a cloud-based archive for your on-premises mailboxes, you must manage In-Place Holds from your on-premises Exchange Server organization. Hold settings are automatically propagated to the cloud-based archive using DirSync.
+> If you use Exchange Online Archiving to provision a cloud-based archive for your on-premises mailboxes, you must manage In-Place Holds from your on-premises Exchange Server organization. Hold settings are automatically propagated to the cloud-based archive using Azure AD Connect.
   
 Many organizations require that users be informed when they're placed on hold. Additionally, when a mailbox is on hold, any retention policies applicable to the mailbox user don't need to be suspended. Because messages continue to be deleted as expected, users may not notice they're on hold. If your organization requires that users on hold be informed, you can add a notification message to the mailbox user's by populating the **Retention Comment** property and using the **RetentionUrl** property to link to a web page for more information. Outlook 2010 and later versions display the retention comment and URL in the backstage area, which is located on the **Files** ribbon. You can use the **Set-Mailbox** cmdlet to add these properties.
   
